@@ -21,7 +21,7 @@ body, html, *{
     flex-direction: column;  /* makes stuff inside it a column/row */
     align-items: center;
     justify-content: space-evenly;  /* space-between gives equal spacing between elements, space-around gives equal spacing around items what does this mena???*/
-    background-image: url(); /* to add transparent layer over img,  */
+    background-image: url(); /* to add transparent layer over img, use linear-gradient before url */
 }
 .card-img{
     width: 100%;
