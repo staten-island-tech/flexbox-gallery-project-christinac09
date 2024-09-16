@@ -1,17 +1,21 @@
-body, html, *{
+body, html, *{   /* does * means that these properties are applied to all elements in it?? */
     font-size: 10px;
     box-sizing: border-box;
-    margin: 0;
+    margin: 2rem auto;
     padding: 0;
 }
 .container{
     width: 90vw;
-    margin: 2rem auto;
-    display: flex;    /* lays everything out evenly */
-    flex-wrap: wrap;  /* wraps page goes to next line */
+    margin: 5rem auto;
+    display: flex;    /* needed to initiated flexbox, lays everything out evenly */
+    /* flex-wrap: wrap; */  /* wraps page goes to next line */
+    flex-flow: row wrap; /* combines flex-direction and flex-wrap */
     justify-content: space-between;
     
 }
+/* align-content changes the spacing between lines,
+align-items determines how the items as a whole are aligned in container
+if is only one line, align-content has no effect. */
 .card{
     height: 30rem;
     width: 30%;     /* 1rem = font size, it's a relative unit; use % for it to only have 3 cards per row */
@@ -19,8 +23,8 @@ body, html, *{
     border-radius: 3px;
     display: flex;
     flex-direction: column;  /* makes stuff inside it a column/row */
-    align-items: center;
-    justify-content: space-evenly;  /* space-between gives equal spacing between elements, space-around gives equal spacing around items what does this mena???*/
+    align-items: center; /* could change depending on whether flex-direction is row, column, etc. */
+    justify-content: space-evenly;  /* space-between gives max equal spacing between elements, space-around gives equal spacing around items what does this mena???*/
     background-image: url(); /* to add transparent layer over img, use linear-gradient before url */
 }
 .card-img{

@@ -1,0 +1,23 @@
+body, html, *{
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    padding: 0;
+    text-align: center;
+}
+.container {
+    padding: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card{
+    border: 2px solid black;
+    width: 25%;
+    height: 250px;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
