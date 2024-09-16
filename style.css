@@ -6,6 +6,8 @@ body, html, *{
     text-align: center;
 }
 .container {
+    background-color: antiquewhite;
+    width: 93vw; 
     padding: 5rem;
     display: flex;
     flex-flow: row wrap;
@@ -14,10 +16,21 @@ body, html, *{
 
 .card{
     border: 2px solid black;
-    width: 25%;
-    height: 250px;
-    margin: 3rem;
+    border-radius: 30px;
+    width: 26%;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.card-heading {
+    font-size: 20px;
+}
+.card-img {
+    height: 50%;
+    width: 70%;
+    object-fit: cover;
+}
+.card-desc {
+    margin-bottom: ;
 }

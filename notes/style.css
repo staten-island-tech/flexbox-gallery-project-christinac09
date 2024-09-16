@@ -5,7 +5,7 @@ body, html, *{   /* does * means that these properties are applied to all elemen
     padding: 0;
 }
 .container{
-    width: 90vw;
+    width: 90vw;   /* vw means percent of viewport width */
     margin: 5rem auto;
     display: flex;    /* needed to initiated flexbox, lays everything out evenly */
     /* flex-wrap: wrap; */  /* wraps page goes to next line */
