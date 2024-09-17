@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+
 body, html, *{
     font-size: 10px;
     box-sizing: border-box;
@@ -5,8 +7,12 @@ body, html, *{
     padding: 0;
     text-align: center;
 }
+body {
+    background-color: blanchedalmond;
+}
 h1 {
-    font-size: 50px;
+    font-size: 70px;
+    font-family: "Oregano", cursive;
 }
 .container {
     background-color: antiquewhite;
@@ -15,17 +21,20 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .card{
     background-color: bisque;
     border: 2px solid black;
     border-radius: 30px;
-    width: 26%;
+    /* width: 26%; this makes cards shrink when viewport shrinks instead of stack into 1 column*/
+    width: 50em;
     height: 35rem;
+    margin: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .card-heading {
     font-size: 20px;
