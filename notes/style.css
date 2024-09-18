@@ -4,6 +4,22 @@ body, html, *{   /* does * means that these properties are applied to all elemen
     margin: 2rem auto;
     padding: 0;
 }
+a,
+a:link,
+a:visited,
+a:focus {  /* focus is triggered when the user clicks or taps on an element or selects it with the keyboard's Tab key */
+    color: white;
+    text-decoration: underline;
+}
+button {
+    transition: all 0.5s;   /* time span of transition, makes it smoother */
+}
+button:hover {   /* :hover means these things will happen to/change about the button when mouse hovers over it */
+    transform: scale(1.2) translateY(10px);
+    filter: blur(50%);
+    background-color: blue;
+}
+
 .container{
     width: 90vw;   /* vw means percent of viewport width */
     margin: 5rem auto;
@@ -18,7 +34,7 @@ align-items determines how the items as a whole are aligned in container
 if is only one line, align-content has no effect. */
 .card{
     height: 30rem;
-    width: 30%;     /* 1rem = font size, it's a relative unit; use % for it to only have 3 cards per row */
+    width: 26%;     /* 1rem = font size, it's a relative unit; use % for it to only have 3 cards per row */
     border: 2px solid black;
     border-radius: 3px;
     display: flex;
