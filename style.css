@@ -28,6 +28,7 @@ h1 {
     background-color: bisque;
     border: 2px solid black;
     border-radius: 30px;
+    box-shadow: 12px 12px 2px 1px rgba(141, 111, 46, 0.3);
     width: 26%; /* this makes cards shrink when viewport shrinks instead of stack into 1 column*/
     /* width: 50em; */
     height: 35rem;
@@ -37,12 +38,35 @@ h1 {
     justify-content: space-between;
     transition: all 0.3s;
 }
+/* always start with wider width so it filters down  */
+@media screen and (max-width: 1300px) {
+    .card {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card {
+        width: 90%; /* has to be less than 50% (which is half of container bc of margin & spacing */
+    }
+    .container {
+        flex-direction: column;
+    }
+}
 
 .card:hover {    
     transform: scale(1.1);
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 8px 15px rgba(141, 111, 46, 0.5)
 }
-
+#card-1:hover {
+    transform: translateY(-15px)
+}
+#card-2:hover {
+    transform: rotate(15deg);
+}
+#card-3:hover {
+    transform: scale(0.9);
+}
 .card-heading {
     font-size: 20px;
 }
