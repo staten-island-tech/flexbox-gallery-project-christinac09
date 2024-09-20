@@ -1,19 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
 
 body, html, *{
-    font-size: 10px;
+    /* font-size: 20px; */
     box-sizing: border-box;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 0;
     text-align: center;
 }
 body {
     background-color: blanchedalmond;
+    font-size: 20px;
 }
-h1 {
-    font-size: 70px;
+.container-heading {
+    height: 15vh;
+    width: 25vw;
+    background-color: rgb(207, 141, 66);
+    border-radius: 15px;
+    font-size: 40px;
     font-family: "Oregano", cursive;
 }
+/* h1 {
+    height: 15vh;
+    width: 25vw;
+    background-color: rgb(207, 141, 66);
+    border-radius: 15px;
+    font-size: 40px;
+    font-family: "Oregano", cursive;
+    padding-top: 2%;
+    
+} */
 .container {
     background-color: antiquewhite;
     width: 93vw; 
@@ -31,11 +46,12 @@ h1 {
     box-shadow: 12px 12px 2px 1px rgba(141, 111, 46, 0.3);
     width: 26%; /* this makes cards shrink when viewport shrinks instead of stack into 1 column*/
     /* width: 50em; */
-    height: 35rem;
+    height: 20rem;
     margin: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-start;
     transition: all 0.3s;
 }
 /* always start with wider width so it filters down  */
@@ -68,11 +84,11 @@ h1 {
     transform: scale(0.9);
 }
 .card-heading {
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 .card-img {
-    height: 50%;
-    width: 70%;
+    height: 55%;
+    width: 75%;
     object-fit: cover;
 }
 .card-desc {
