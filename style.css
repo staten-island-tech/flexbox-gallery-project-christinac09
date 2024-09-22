@@ -11,13 +11,16 @@ body {
     background-color: blanchedalmond;
     font-size: 20px;
 }
-.container-heading {
-    height: 15vh;
-    width: 25vw;
+.title-container {
+    /* height: 15vh; */  /* not needed bc a fixed height mess with padding & font-size */
+    width: 30vw;
     background-color: rgb(207, 141, 66);
+    border: solid 4px rgb(176, 118, 52);
+    padding: 0.5rem;
     border-radius: 15px;
     font-size: 40px;
     font-family: "Oregano", cursive;
+    transition: all 1.5s;
 }
 /* h1 {
     height: 15vh;
@@ -47,12 +50,12 @@ body {
     width: 26%; /* this makes cards shrink when viewport shrinks instead of stack into 1 column*/
     /* width: 50em; */
     height: 20rem;
-    margin: 2em;
+    margin: 2em auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    transition: all 0.3s;
+    transition: all 0.75s;
 }
 /* always start with wider width so it filters down  */
 @media screen and (max-width: 1300px) {
@@ -92,5 +95,5 @@ body {
     object-fit: cover;
 }
 .card-desc {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem auto;
 }
