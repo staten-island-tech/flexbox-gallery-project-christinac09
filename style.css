@@ -30,7 +30,7 @@ body {
     /* using just animation combines everything together */
     /* animation: 4s linear 0s infinite alternate slidein; */  /* infinite makes it go on forever */
     animation-name: slidein;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-direction: alternate;  /* forwards then backwards */
     animation-iteration-count: 1.5;
     animation-timing-function: ease-in-out; /* speed curve of animation */
