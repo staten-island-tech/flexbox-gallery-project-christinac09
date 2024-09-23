@@ -36,11 +36,11 @@ body {
     animation-timing-function: ease-in-out; /* speed curve of animation */
 }
 @keyframes slidein {
-    from {                                  /* from = 0%, to = 100% */
+    0% {                                  /* from = 0%, to = 100% */
       transform: translateX(-50%);
     }
   
-    to {
+    100% {
       transform: translateX(50%);
     }
   }
@@ -82,7 +82,7 @@ body {
       transform: scale(0.3);
     }
   
-    to {
+    100% {
       transform: scale(1);
     }
   }
@@ -147,7 +147,7 @@ body {
     from {
         transform: translateY(0);
     }
-    to {
+    100% {
         transform: translateY(-50px);
     }
 }
