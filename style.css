@@ -1,41 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Playwrite+DE+Grund:wght@100..400&display=swap');
 
 body, html, *{
-    /* font-size: 20px; */
     box-sizing: border-box;
-    margin: 1rem auto;
-    padding: 0;
     text-align: center;
+    /* margin: 0;
+    padding: 0; */
 }
 body {
-    background-color: blanchedalmond;
-    font-size: 20px;
+    margin: 1rem auto;
+    background-image: linear-gradient(rgba(203, 162, 113, 0.5),rgb(203, 162, 113)), url("img/circles.jpg");
+    background-size: 25%;
+    font-size: 20px;   /* = to 1rem all other fonts are based on this size */
 }
+
 .title-container {
     /* height: 15vh; */  /* not needed bc a fixed height mess with padding & font-size */
-    width: 30vw;
+    width: 40vw;
     background-color: rgb(207, 141, 66);
     border: solid 4px rgb(176, 118, 52);
+    margin: 4rem auto;
     padding: 0.5rem;
     border-radius: 15px;
-    font-size: 40px;
+    font-size: 2.2rem;
     font-family: "Oregano", cursive;
-    transition: all 1.5s;
+    color: rgb(103, 60, 38);
+    transition: all 0.75s;
 }
-/* h1 {
-    height: 15vh;
-    width: 25vw;
-    background-color: rgb(207, 141, 66);
-    border-radius: 15px;
-    font-size: 40px;
-    font-family: "Oregano", cursive;
-    padding-top: 2%;
-    
-} */
+.title-container:hover {
+    background-color: rgb(175, 110, 77);
+    color: rgb(236, 195, 144);
+    transform: rotate(360deg);
+}
+
 .container {
-    background-color: antiquewhite;
+    background-color: rgb(237, 219, 192);
     width: 93vw; 
+    margin: 1rem auto;
     padding: 5rem;
+    border-radius: 15px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -43,33 +47,52 @@ body {
 }
 
 .card{
-    background-color: bisque;
-    border: 2px solid black;
+    background-color: rgb(231, 212, 171);
+    border: 4px solid rgb(210, 180, 141);
     border-radius: 30px;
     box-shadow: 12px 12px 2px 1px rgba(141, 111, 46, 0.3);
     width: 26%; /* this makes cards shrink when viewport shrinks instead of stack into 1 column*/
-    /* width: 50em; */
-    height: 20rem;
-    margin: 2em auto;
+    height: 25rem;
+    margin: 2rem auto;
+    padding: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
-    transition: all 0.75s;
+    align-items: center;
+    transition: all 0.9s;
 }
-/* always start with wider width so it filters down  */
+/* always start with wider width so it filters down, ALSO: should be placed after wherever the classes inside it are placed */
 @media screen and (max-width: 1300px) {
+    body {
+        background-size: 50%;
+    }
+    .title-container {
+        width: 70vw;
+    }
     .card {
         width: 43%;
     }
+    .card-heading {
+        font-size: 0.9rem;
+    }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px){
+    body {
+        background-size: 100%;
+    }
+    .title-container {
+        width: 80vw;
+        font-size: 1.4rem;
+    }
     .card {
-        width: 90%; /* has to be less than 50% (which is half of container bc of margin & spacing */
+        width: 100%; /* has to be less than 50% (which is half of container bc of margin & spacing */
     }
     .container {
         flex-direction: column;
+    }
+    .card-heading {
+        font-size: 0.55rem;
     }
 }
 
@@ -77,23 +100,38 @@ body {
     transform: scale(1.1);
     box-shadow: 8px 15px rgba(141, 111, 46, 0.5)
 }
-#card-1:hover {
-    transform: translateY(-15px)
+#card-hargow:hover {
+    transform: translateY(-15px);
 }
-#card-2:hover {
+#card-siumai:hover {
     transform: rotate(15deg);
 }
-#card-3:hover {
+#card-chickenfeet:hover {
     transform: scale(0.9);
 }
+
 .card-heading {
+    font-family: "Playwrite DE Grund", cursive;
     font-size: 1.4rem;
 }
+
 .card-img {
     height: 55%;
     width: 75%;
     object-fit: cover;
+    border-radius: 15px;
 }
 .card-desc {
     margin-bottom: 1.5rem auto;
+    font-family: "Delius", cursive;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 700px){
+    .card-heading {
+        font-size: 1.2rem;
+    }
+    .card-desc {
+        font-size: 1.1rem;
+    }
 }
