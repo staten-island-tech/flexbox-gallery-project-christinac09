@@ -116,6 +116,7 @@ body {
     }
     .container {
         flex-direction: column;
+        padding: 3rem;
     }
     .card-heading {
         font-size: 0.55rem;
@@ -135,7 +136,7 @@ body {
 
 .card-img {
     height: 55%;
-    width: 75%;
+    width: 90%;
     object-fit: cover;
     border-radius: 15px;
 }
