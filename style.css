@@ -28,6 +28,15 @@ body {
     color: rgb(103, 60, 38);
     transition: all 0.75s;
 }
+@keyframes titleslidein {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(50%);
+    }
+  }
 .title-container:hover {
     background-color: rgb(175, 110, 77);
     color: rgb(236, 195, 144);
@@ -101,18 +110,20 @@ body {
     box-shadow: 8px 15px rgba(141, 111, 46, 0.5)
 }
 #card-hargow:hover {
-    transform: translateY(-15px);
+    transform: translateY(-150px);
+    box-shadow: 30px 30px rgb(244, 244, 219);
 }
 #card-siumai:hover {
-    transform: rotate(15deg);
+    transform: rotate(15deg) scale(3);
 }
 #card-chickenfeet:hover {
-    transform: scale(0.9);
+    transform: scale(0.8) scaleX(-1);
 }
 
 .card-heading {
     font-family: "Playwrite DE Grund", cursive;
     font-size: 1.4rem;
+    color: rgb(154, 92, 61);
 }
 
 .card-img {
@@ -121,9 +132,13 @@ body {
     object-fit: cover;
     border-radius: 15px;
 }
+.card-img:hover {
+    animation: bounce 0.5s
+}
 .card-desc {
     margin-bottom: 1.5rem auto;
     font-family: "Delius", cursive;
+    color: rgb(167, 118, 81);
     font-size: 1.3rem;
 }
 
