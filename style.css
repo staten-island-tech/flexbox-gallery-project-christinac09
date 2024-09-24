@@ -201,7 +201,7 @@ body {
     box-shadow: 30px 30px rgb(244, 244, 219);
     background-color: rgb(175, 110, 77);
     border-color: rgb(150, 195, 152);
-    /* color: rgb(150, 195, 152); */
+    color: rgb(150, 195, 152);
 }
 #card-siumai:hover {
     transform: rotate(360deg) scale(1.3);
