@@ -103,7 +103,7 @@ body {
     color: rgb(154, 92, 61);
 }
 .card-desc {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.3rem auto;
 }
 .card-img {
     height: 55%;
