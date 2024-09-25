@@ -173,3 +173,6 @@ body {
 #card-chickenfeet:hover {
     transform: scale(0.8) scaleX(-1);
 }
+#card-turnipcake:hover {
+    transform: skew(-10deg);
+}
