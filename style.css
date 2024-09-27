@@ -5,13 +5,16 @@
 
 body, html, *{
     box-sizing: border-box;
-    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
 }
 body {
+    text-align: center;
     margin: 1rem auto;
     background-image: linear-gradient(rgba(203, 162, 113, 0.5),rgb(203, 162, 113)), url("img/circles.jpg");
     background-size: 25%;
-    font-size: 20px;   /* = to 1rem all other fonts are based on this size */
+    /* font-size: 20px; */   /* = to 1rem all other fonts are based on this size */
 }
 
 .title-container {
@@ -19,10 +22,10 @@ body {
     width: 40vw;
     background-color: rgb(207, 141, 66);
     border: solid 4px rgb(176, 118, 52);
-    margin: 4rem auto;
-    padding: 0.5rem;
+    margin: 8rem auto;
+    padding: 1rem;
     border-radius: 15px;
-    font-size: 2.2rem;
+    font-size: 4rem;
     font-family: "Oregano", cursive;
     color: rgb(103, 60, 38);
     transition: all 0.75s;
@@ -65,8 +68,8 @@ body {
 .container {
     background-color: rgba(237, 219, 192, 0.6);
     width: 93vw; 
-    margin: 1rem auto;
-    padding: 5rem;
+    margin: 2rem auto;
+    padding: 10rem;
     border-radius: 15px;
     display: flex;
     flex-flow: row wrap;
@@ -80,9 +83,9 @@ body {
     box-shadow: 12px 12px 5px 1px rgba(141, 111, 46, 0.3);  /* format: x-offset y-offset blur spread color */
     /* width: 26%; */
     width: 21%;
-    height: 25rem;
-    margin: 2rem auto;
-    padding: 0.8rem;
+    height: 50rem;
+    margin: 4rem auto;
+    padding: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -99,11 +102,11 @@ body {
 .card-heading,
 .card-desc {
     font-family: "Playwrite DE Grund", cursive;
-    font-size: 1.3rem;
+    font-size: 2.6rem;
     color: rgb(154, 92, 61);
 }
 .card-desc {
-    margin-bottom: 1.3rem auto;
+    margin-bottom: 2.6rem auto;
 }
 .card-img {
     height: 55%;
@@ -134,9 +137,6 @@ body {
     .card {
         width: 45%;
     }
-    .card-heading {
-        font-size: 0.9rem;
-    }
 }
 
 @media screen and (max-width: 700px){
@@ -145,20 +145,20 @@ body {
     }
     .title-container {
         width: 80vw;
-        font-size: 1.4rem;
+        font-size: 2.8rem;
     }
     .card {
         width: 100%; /* has to be less than 50% (which is half of container bc of margin & spacing */
     }
     .container {
         flex-direction: column;
-        padding: 3rem;
+        padding: 6rem;
     }
     .card-heading {
-        font-size: 1.2rem;
+        font-size: 2.4rem;
     }
     .card-desc {
-        font-size: 1.1rem;
+        font-size: 2.2rem;
     }
     
 }
