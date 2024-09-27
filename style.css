@@ -14,7 +14,6 @@ body {
     margin: 1rem auto;
     background-image: linear-gradient(rgba(203, 162, 113, 0.5),rgb(203, 162, 113)), url("img/circles.jpg");
     background-size: 25%;
-    /* font-size: 20px; */   /* = to 1rem all other fonts are based on this size */
 }
 
 .title-container {
@@ -23,15 +22,17 @@ body {
     background-color: rgb(207, 141, 66);
     border: solid 4px rgb(176, 118, 52);
     margin: 8rem auto;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 15px;
-    font-size: 5rem;
-    font-family: "Oregano", cursive;
-    color: rgb(103, 60, 38);
     transition: all 0.75s;
     animation: slidein_fromleft 2s ease-in-out 1.5 alternate,
                 pulse 2s 4s infinite alternate;
     /* format: animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+#title {
+    font-size: 5rem;
+    font-family: "Oregano", cursive;
+    color: rgb(103, 60, 38);
 }
 @keyframes slidein_fromleft {
     0% {                                 
@@ -69,7 +70,7 @@ body {
     background-color: rgba(237, 219, 192, 0.6);
     width: 93vw; 
     margin: 2rem auto;
-    padding: 10rem;
+    padding: 5rem;
     border-radius: 15px;
     display: flex;
     flex-flow: row wrap;
@@ -102,7 +103,7 @@ body {
 .card-heading,
 .card-desc {
     font-family: "Playwrite DE Grund", cursive;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     color: rgb(154, 92, 61);
 }
 .card-desc {
@@ -139,7 +140,7 @@ body {
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 750px){
     body {
         background-size: 100%;
     }
