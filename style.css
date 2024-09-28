@@ -18,7 +18,7 @@ body {
 
 .title-container {
     /* height: 15vh; */  /* not needed bc a fixed height mess with padding & font-size */
-    width: 40vw;
+    width: 40%;
     background-color: rgb(207, 141, 66);
     border: solid 4px rgb(176, 118, 52);
     margin: 8rem auto;
@@ -30,7 +30,7 @@ body {
     /* format: animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 #title {
-    font-size: 5rem;
+    font-size: 5.8rem;
     font-family: "Oregano", cursive;
     color: rgb(103, 60, 38);
 }
@@ -63,12 +63,14 @@ body {
 
 .title-container:hover {
     background-color: rgb(175, 110, 77);
+}
+#title:hover {
     color: rgb(236, 195, 144);
 }
 
 .container {
     background-color: rgba(237, 219, 192, 0.6);
-    width: 93vw; 
+    width: 93%; 
     margin: 2rem auto;
     padding: 5rem;
     border-radius: 15px;
@@ -133,7 +135,7 @@ body {
         background-size: 50%;
     }
     .title-container {
-        width: 70vw;
+        width: 70%;
     }
     .card {
         width: 45%;
@@ -145,7 +147,7 @@ body {
         background-size: 100%;
     }
     .title-container {
-        width: 80vw;
+        width: 80%;
     }
     .card {
         width: 100%; /* has to be less than 50% (which is half of container bc of margin & spacing */
