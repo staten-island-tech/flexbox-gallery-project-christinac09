@@ -89,6 +89,7 @@ body {
     height: 50rem;
     margin: 4rem auto;
     padding: 1.6rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
