@@ -10,7 +10,6 @@ body, html, *{
     padding: 0;
 }
 body {
-    text-align: center;
     margin: 1rem auto;
     background-image: linear-gradient(rgba(203, 162, 113, 0.5),rgb(203, 162, 113)), url("img/circles.jpg");
     background-size: 25%;
@@ -24,6 +23,7 @@ body {
     margin: 8rem auto;
     padding: 3rem;
     border-radius: 15px;
+    text-align: center;
     transition: all 0.75s;
     animation: slidein_fromleft 2s ease-in-out 1.5 alternate,
                 pulse 2s 4s infinite alternate;
@@ -89,6 +89,7 @@ body {
     height: 50rem;
     margin: 4rem auto;
     padding: 1.6rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
